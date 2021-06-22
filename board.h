@@ -25,7 +25,7 @@ namespace Chess {
 		std::string asString();
 		bool isChecked(const bool& side) const;
 		bool capturesPiece(const Move& move) const;
-		[[noreturn]] void castle(bool& side, bool&& kside);
+		void castle(bool& side, bool&& kside);
 		bool canCastle(bool& side, bool& kside) const;
 
 		Piece getPiece(const Square& location) const;
