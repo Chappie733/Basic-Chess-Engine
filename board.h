@@ -18,7 +18,7 @@ namespace Chess {
 
 		bool isLegal(const Move& move) const;
 		bool processMove(Move& move); // returns if the move is valid
-		[[noreturn]] void reset();
+		void reset();
 		std::vector<Move> getPossibleMoves(const Piece& piece, bool&& c_legals = true) const;
 		std::vector<Move> getAllPossibleMoves(const bool& side) const; // true -> white, false -> black
 
